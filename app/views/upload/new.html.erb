@@ -1,2 +1,4 @@
-<h1>Upload#new</h1>
-<p>Find me in app/views/upload/new.html.erb</p>
+<% form_for @upload, :multipart => true do |f| -%>
+  <%= f.file_field :file %><br>
+  <%= f.submit %>
+<% end -%>
