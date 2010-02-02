@@ -1,0 +1,2 @@
+This is an uploaded file fixture.
+It will stand in for a real uploaded file in /tmp/uploads or somesuch directory.
