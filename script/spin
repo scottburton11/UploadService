@@ -1,1 +1,1 @@
-/var/www/UploadService/current/script/spawner -p 8100 -i 3
+/var/www/UploadService/current/script/process/spawner -p 8100 -i 3
