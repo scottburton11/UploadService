@@ -7,3 +7,4 @@ config/s3.yml
 config/merchant.yml
 doc/*
 coverage/*
+config/deploy.rb
