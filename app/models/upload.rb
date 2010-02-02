@@ -1,7 +1,7 @@
 class Upload < ActiveRecord::Base
-  def file=(params)
-    File.open(Rails.root + "public/uploads/#{params[:filename]}", "w+") do |file|
-      file.write File.open(params[:path]).read
+  def file=(porter)
+    File.open(Rails.root + "public/uploads/#{porter.original_filename}", "w+") do |file|
+      file.write File.open(porter.path).read
     end
   end
   

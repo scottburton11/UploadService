@@ -5,8 +5,8 @@ class UploadsController < ApplicationController
 
   def create
     @upload = Upload.new(params[:upload])
-    @upload.filename, @upload.content_type = params[:upload][:file][:filename], params[:upload][:file][:content_type]
-    redirect_to @upload
+    @upload.filename, @upload.content_type = params[:upload][:file].original_filename, params[:upload][:file].content_type
+    redirect_to upload_path(@upload)
   end
   
   def show
