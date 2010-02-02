@@ -5,6 +5,7 @@ db/*.sqlite3
 config/database.yml
 config/s3.yml
 config/merchant.yml
+config/upload_config.yml
 doc/*
 coverage/*
 config/deploy.rb
